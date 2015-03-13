@@ -1,5 +1,4 @@
 # megsaxby.github.io
 personal website
 
-# tech
-Express.js, Jade and Sass
+Running on node with Express, Jade and Sass
