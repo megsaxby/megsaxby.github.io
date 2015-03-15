@@ -1,8 +1,11 @@
+$light-blue: #75b5f7;
+$dark-blue: #0556a3;
+
 html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: "Lato", normal;
 }
 
 .container {
@@ -65,11 +68,36 @@ html, body {
 		top: 50%;
 		left: 20%;
 	}
-
 }
 
 .contact {
 	flex: 1;
+	display: flex;
+
+	.testimonials {
+		flex: 1;
+		background-color: $light-blue;
+
+		p {
+			width: 50%;
+			float: right;
+		}
+	}
+
+	.contact-info {
+		flex: 1;
+		background-color: $dark-blue;
+		display: flex;
+
+		.title {
+			flex: 2;
+			padding-left: 30px;
+		}
+
+		.details {
+			flex: 1;
+		}
+	}
 }
 
 @media screen and (min-width: 900) {
