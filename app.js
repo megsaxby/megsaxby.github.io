@@ -18,7 +18,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (req, res) {
   res.render('home', 
-  	{ title : 'Home'}
+  	{ title : 'Home',
+  	  testimonials : [
+  	  	{ content: '\"Meg is the best in the world and this is why.\" - Professor McSmartyPants'},
+  	  	{ content: '\"Meg is the best in the world and this is why.\" - Participant'},
+  	  	{ content: '\"Planning workshops with Meg is one of my favorite things to do.\" - Kitty May'}
+  	  ]}
   )
 })
 app.listen(3000)

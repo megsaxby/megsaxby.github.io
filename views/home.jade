@@ -27,7 +27,8 @@ html
       .contact
         .testimonials-container
           .testimonials
-            p Testimonial #1 (placeholder for roulette using data)
+            -for (index in testimonials)
+              p #{testimonials[index].content}
         
         .contact-info-container
           .contact-info
