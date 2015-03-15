@@ -26,6 +26,23 @@ html, body {
   }
 }
 
+/* Chrome, Safari, Opera */
+@-webkit-keyframes move {
+  0% { bottom: 0; }
+  30% { bottom: 80px; }
+  60% { bottom: 160px; }
+  100% { bottom: 240px; }
+}
+
+/* Standard syntax */
+@keyframes move {
+  0% { bottom: 0; }
+  10% { bottom: 130px; }
+  50% { bottom: 130px; }
+  60% { bottom: 260px; }
+  100% { bottom: 260px; }
+}
+
 .main-content {
 	flex: 2;
 	@extend %clearfix;
@@ -82,11 +99,25 @@ html, body {
 		flex: 1;
 		position: relative;
 		background-color: $light-blue;
+		overflow: hidden;
 
 		.testimonials {
 			position: absolute;
 			bottom: 20%;
 			right: 10%;
+			overflow: hidden;
+			height: 80px;
+
+			.carousel-container {
+				position: relative;
+        		-webkit-animation: move 10s linear 1s infinite; /* Chrome, Safari, Opera */
+        		animation: move 15s linear 5s infinite;
+			}
+
+			.testimonial {
+				width: 200px;
+				height: 80px;
+			}
 		}
 	}
 

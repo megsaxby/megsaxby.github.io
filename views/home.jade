@@ -27,8 +27,9 @@ html
       .contact
         .testimonials-container
           .testimonials
-            -for (index in testimonials)
-              p #{testimonials[index].content}
+            .carousel-container
+              -for (index in testimonials)
+                p.testimonial #{testimonials[index].content}
         
         .contact-info-container
           .contact-info
