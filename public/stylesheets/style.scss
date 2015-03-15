@@ -78,27 +78,36 @@ html, body {
 	flex: 1;
 	display: flex;
 
-	.testimonials {
+	.testimonials-container {
 		flex: 1;
+		position: relative;
 		background-color: $light-blue;
 
-		p {
-			width: 50%;
-			float: right;
+		.testimonials {
+			position: absolute;
+			bottom: 20%;
+			right: 10%;
 		}
 	}
 
-	.contact-info {
+	.contact-info-container {
 		flex: 1;
 		background-color: $dark-blue;
-		display: flex;
+		position: relative;
 
-		.title {
+		.contact-info {
+			width: 100%;
+			display: flex;
+			position: absolute;
+			bottom: 20%;
+		}
+
+		.title-container {
 			flex: 2;
 			padding-left: 30px;
 		}
 
-		.details {
+		.details-container {
 			flex: 1;
 		}
 	}
