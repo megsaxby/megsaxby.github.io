@@ -1,0 +1,98 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", normal; }
+
+ul, .main-content, .contact .contact-info-container, .contact .contact-info-container .details-container {
+  *zoom: 1; }
+  ul:before, .main-content:before, .contact .contact-info-container:before, .contact .contact-info-container .details-container:before, ul:after, .main-content:after, .contact .contact-info-container:after, .contact .contact-info-container .details-container:after {
+    content: " ";
+    display: table; }
+  ul:after, .main-content:after, .contact .contact-info-container:after, .contact .contact-info-container .details-container:after {
+    clear: both; }
+
+ul {
+  background-color: #0556a3;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    padding: 1em; }
+    ul li:hover {
+      position: relative; }
+      ul li:hover .submenu {
+        display: block;
+        z-index: 2; }
+    ul li a {
+      text-decoration: none;
+      color: white; }
+  ul.navbar > li {
+    display: inline;
+    float: right; }
+  ul .submenu {
+    display: none;
+    position: absolute; }
+    ul .submenu > li {
+      top: 20px;
+      padding-bottom: 0; }
+
+.container {
+  height: 100%;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  color: white; }
+
+.main-content {
+  background: url("../images/birds-frontpage.png") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  position: relative; }
+  .main-content .logo {
+    position: absolute;
+    top: 30%;
+    left: 20%; }
+    @media (max-width: 768px) {
+      .main-content .logo {
+        padding: 2em;
+        position: initial; } }
+    .main-content .logo h1 {
+      margin-top: 0;
+      font-size: 3.5em; }
+  .main-content .find-out-more-link a {
+    border: 1px solid white;
+    padding: 10px; }
+    @media (max-width: 768px) {
+      .main-content .find-out-more-link a {
+        background-color: #0556a3;
+        border: none; } }
+
+.contact {
+  background-color: #75b5f7; }
+  .contact .contact-info-container {
+    float: right;
+    background-color: #0556a3;
+    padding: 2em 0 4em 2em;
+    width: 50%; }
+    @media (max-width: 768px) {
+      .contact .contact-info-container {
+        float: none;
+        width: initial; } }
+    .contact .contact-info-container .title-container {
+      float: left; }
+      @media (max-width: 768px) {
+        .contact .contact-info-container .title-container {
+          float: none; } }
+      .contact .contact-info-container .title-container h1 {
+        margin-top: 0; }
+    .contact .contact-info-container .details-container {
+      float: left;
+      font-size: 0.8em;
+      margin: 1em 0 0 8em; }
+      @media (max-width: 768px) {
+        .contact .contact-info-container .details-container {
+          float: none;
+          margin: 0; } }
+      .contact .contact-info-container .details-container .contact-detail-name {
+        margin-bottom: 15px; }

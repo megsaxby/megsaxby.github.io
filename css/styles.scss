@@ -5,6 +5,8 @@
 $light-blue: #75b5f7;
 $dark-blue: #0556a3;
 
+$mobile: 768px;
+
 html, body {
 	height: 100%;
 	margin: 0;
@@ -23,23 +25,45 @@ html, body {
   }
 }
 
-ul.navbar {
+ul {
 	@extend %clearfix;
 
 	background-color: $dark-blue;
 	list-style-type: none;
 	margin: 0;
-	padding: 20px;
+	padding: 0;
 
 	li {
-		display: inline;
-		float: right;
-		padding-right: 20px;
+		padding: 1em;
+
+		&:hover {
+			position: relative;
+
+			.submenu {
+				display: block;
+				z-index: 2;
+			}
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
 	}
 
-	a {
-		text-decoration: none;
-		color: white;
+	&.navbar > li {
+		display: inline;
+		float: right;
+	}
+
+	.submenu {
+		display: none;
+		position: absolute;
+
+		> li {
+			top: 20px;
+			padding-bottom: 0;
+		}
 	}
 }
 
@@ -63,6 +87,11 @@ ul.navbar {
 		top: 30%;
 		left: 20%;
 
+		@media (max-width: $mobile) {
+			padding: 2em;
+			position: initial;
+		}
+
 		h1 {
 			margin-top: 0;
 			font-size: 3.5em;
@@ -73,6 +102,11 @@ ul.navbar {
 		a {
 			border: 1px solid white;
 			padding: 10px;
+
+			@media (max-width: $mobile) {
+				background-color: $dark-blue;
+				border: none;
+			}
 		}
 	}
 }
@@ -87,8 +121,17 @@ ul.navbar {
 		padding: 2em 0 4em 2em;
 		width: 50%;
 
+		@media (max-width: $mobile) {
+			float: none;
+			width: initial;
+		}
+
 		.title-container {
 			float: left;
+
+			@media (max-width: $mobile) {
+				float: none;
+			}
 
 			h1 {
 				margin-top: 0;
@@ -101,13 +144,14 @@ ul.navbar {
 			font-size: 0.8em;
 			margin: 1em 0 0 8em;
 
+			@media (max-width: $mobile) {
+				float: none;
+				margin: 0;
+			}
+
 			.contact-detail-name {
 				margin-bottom: 15px;
 			}
 		}
 	}
-}
-
-@media screen and (min-width: 900) {
-	// some rule that makes a white border on either side of the image
 }
