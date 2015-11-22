@@ -58,10 +58,12 @@ ul {
 
 	.submenu {
 		display: none;
+		left: 0;
 		position: absolute;
+		top: 3em;
+		width: 120px;
 
-		> li {
-			top: 20px;
+		> li:not(:last-child) {
 			padding-bottom: 0;
 		}
 	}

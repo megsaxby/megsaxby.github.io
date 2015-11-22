@@ -32,9 +32,11 @@ ul {
     float: right; }
   ul .submenu {
     display: none;
-    position: absolute; }
-    ul .submenu > li {
-      top: 20px;
+    left: 0;
+    position: absolute;
+    top: 3em;
+    width: 120px; }
+    ul .submenu > li:not(:last-child) {
       padding-bottom: 0; }
 
 .container {
