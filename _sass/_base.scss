@@ -13,6 +13,7 @@ $mobile: new-breakpoint(max-width 768px);
 html, body {
 	height: 100%;
 	font-family: $base-font-family;
+	line-height: $base-line-height;
 }
 
 a {
@@ -31,4 +32,9 @@ a {
 
 ul {
 	list-style-type: none;
+}
+
+h1 {
+	font-size: 2em;
+	margin: .67em 0;
 }

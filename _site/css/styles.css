@@ -11,7 +11,8 @@ html {
 
 html, body {
   height: 100%;
-  font-family: "Lato", normal, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Lato", normal, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5; }
 
 a {
   text-decoration: none;
@@ -24,6 +25,10 @@ a {
 
 ul {
   list-style-type: none; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
 
 header {
   background-color: #0556a3; }
@@ -54,7 +59,8 @@ nav {
     padding-left: 20px;
     position: absolute;
     top: 100%;
-    width: 120px; }
+    width: 120px;
+    z-index: 2; }
     nav .dropdown-menu li {
       margin: 20px 0; }
 
@@ -110,17 +116,26 @@ footer {
     padding: 10px; }
 
 .page {
-  height: 100%;
   position: relative;
   overflow: hidden; }
   .page .content {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
+    width: 48.82117%;
+    margin-left: 25.58941%;
+    margin-top: 4em;
+    margin-bottom: 4em; }
+    .page .content::after {
+      clear: both;
+      content: "";
+      display: table; }
     .page .content:last-child {
       margin-right: 0; }
+    .page .content p {
+      margin: 20px 0; }
+      .page .content p:first-child {
+        margin-top: 0; }
   .page img {
     position: absolute;
     left: 0;
