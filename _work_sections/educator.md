@@ -1,5 +1,5 @@
 ---
-title: educator
+title: Educator
 topics:
   - Sex Positivity in Practice - Building Healthy Relationships, Organisations and Cultures
   - My Body, My Choices - Sex Positivity for Teens
