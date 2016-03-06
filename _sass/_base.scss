@@ -1,0 +1,134 @@
+$light-blue: #75b5f7;
+$dark-blue: #0556a3;
+
+$mobile: 768px;
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html, body {
+	height: 100%;
+	font-family: $base-font-family;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+
+.container {
+	height: 100%;
+	top: 50px;
+
+	&.home {
+		display: flex;
+		flex-direction: column;
+		color: white;
+	}
+
+	&.sub-page {
+		@include clearfix;
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		top: 0;
+
+		img {
+			position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: auto;
+	    opacity: 0.2;
+		}
+	}
+}
+
+.main-content {
+	@include clearfix;
+	background: url('../images/birds-frontpage.png') no-repeat center center;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+
+	.logo {
+		position: absolute;
+		top: 30%;
+		left: 20%;
+
+		@media (max-width: $mobile) {
+			padding: 2em;
+			position: initial;
+		}
+
+		h1 {
+			margin-top: 0;
+			font-size: 3.5em;
+		}
+	}
+
+	.find-out-more-link {
+		a {
+			border: 1px solid white;
+			padding: 10px;
+
+			@media (max-width: $mobile) {
+				background-color: $dark-blue;
+				border: none;
+			}
+		}
+	}
+}
+
+.contact {
+	background-color: $light-blue;
+
+	.contact-info-container {
+		@include clearfix;
+		float: right;
+		background-color: $dark-blue;
+		padding: 2em 0 4em 2em;
+		width: 50%;
+
+		@media (max-width: $mobile) {
+			float: none;
+			width: initial;
+		}
+
+		.title-container {
+			float: left;
+
+			@media (max-width: $mobile) {
+				float: none;
+			}
+
+			h1 {
+				margin-top: 0;
+			}
+		}
+
+		.details-container {
+			@include clearfix;
+			float: left;
+			font-size: 0.8em;
+			margin: 1em 0 0 8em;
+
+			@media (max-width: $mobile) {
+				float: none;
+				margin: 0;
+			}
+
+			.contact-detail-name {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+.content {
+	margin: 2em 5em;
+}
