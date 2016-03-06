@@ -11,6 +11,7 @@ $mobile: new-breakpoint(max-width 768px);
 }
 
 html, body {
+	background-color: $dark-blue;
 	height: 100%;
 	font-family: $base-font-family;
 	line-height: $base-line-height;

@@ -10,6 +10,7 @@ html {
   border: 0; }
 
 html, body {
+  background-color: #0556a3;
   height: 100%;
   font-family: "Lato", normal, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5; }
@@ -116,6 +117,7 @@ footer {
     padding: 10px; }
 
 .page {
+  background-color: #ffffff;
   position: relative;
   overflow: hidden; }
   .page .content {
