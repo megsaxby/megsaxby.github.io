@@ -3,7 +3,7 @@ layout: page
 title: Who I am
 ---
 {% for about_section in site.about_sections %}
-  <h2>{{ about_section.title }}</h2>
+  <h2 id="{{about_section.title}}">{{ about_section.title }}</h2>
   {% for paragraph in about_section.paragraphs %}
     <p>{{ paragraph }}</p>
   {% endfor %}

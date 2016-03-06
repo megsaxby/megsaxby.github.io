@@ -17,9 +17,9 @@
       </li>
       <li><a href="">Who I am</a>
         <ul class="dropdown-menu">
-          <li><a href="">Background</li></a>
-          <li><a href="">Approach</li></a>
-          <li><a href="">Lineage</li></a>
+          {% for about_section in site.about_sections %}
+            <li><a href="/about/#{{about_section.title}}">{{ about_section.title }}</li></a>
+          {% endfor %}
         </ul>
       </li>
     </ul>
