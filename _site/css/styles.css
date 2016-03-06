@@ -22,31 +22,41 @@ a {
     outline: none;
     text-decoration: none; }
 
-header ul {
-  background-color: #0556a3;
+ul {
   list-style-type: none; }
-  header ul::after {
+
+header {
+  background-color: #0556a3; }
+  header::after {
     clear: both;
     content: "";
     display: table; }
-  header ul li {
-    padding: 1em; }
-    header ul li:hover {
-      position: relative; }
-      header ul li:hover .submenu {
-        display: block;
-        z-index: 2; }
-  header ul > li {
+  header .logo {
+    margin-left: 8.5298%;
+    float: left;
+    font-size: 1.7em;
+    margin-top: 12px; }
+
+nav {
+  float: right;
+  padding: 20px; }
+  nav > ul > li {
     display: inline;
-    float: right; }
-header .submenu {
-  display: none;
-  left: 0;
-  position: absolute;
-  top: 3em;
-  width: 120px; }
-  header .submenu > li:not(:last-child) {
-    padding-bottom: 0; }
+    margin: 16px;
+    position: relative; }
+    nav > ul > li:hover > .dropdown-menu {
+      display: block; }
+  nav .dropdown-menu {
+    background-color: #0556a3;
+    display: none;
+    float: left;
+    left: -20px;
+    padding-left: 20px;
+    position: absolute;
+    top: 100%;
+    width: 120px; }
+    nav .dropdown-menu li {
+      margin: 20px 0; }
 
 footer {
   max-width: 1200px;
