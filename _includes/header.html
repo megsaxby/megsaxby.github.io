@@ -2,17 +2,17 @@
   <div class="logo"><a href="/">Meg Saxby</a></div>
   <nav>
     <ul class="navbar">
-      <li><a href="">Current</a>
+      <!-- <li><a href="">Current</a>
         <ul class="dropdown-menu">
           <li><a href="">Blog</li>
           <li><a href="">Schedule</li></a>
         </ul>
-      </li>
+      </li> -->
       <li><a href="/about">What I offer</a>
         <ul class="dropdown-menu">
-          <li><a href="">Educator</li></a>
-          <li><a href="">Organiser</li></a>
-          <li><a href="">Facilitator</li></a>
+          {% for work_section in site.work_sections %}
+            <li><a href="/work/#{{work_section.title}}">{{ work_section.title }}</li></a>
+          {% endfor %}
         </ul>
       </li>
       <li><a href="">Who I am</a>

@@ -4,6 +4,7 @@ url: "http://megsaxby.com"
 
 collections:
   - about_sections
+  - work_sections
 
 markdown: kramdown
 
