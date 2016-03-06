@@ -1,5 +1,5 @@
 ---
-name: organizer
+title: organizer
 topics:
   - Strategies for Building Organisational Wellness and Resiliency
   - Healthy Ways of Coping with Extreme Stress
