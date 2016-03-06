@@ -18,4 +18,13 @@ html, body {
 a {
 	text-decoration: none;
 	color: $white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: none;
+    color: $light-blue;
+    outline: none;
+    text-decoration: none;
+  }
 }

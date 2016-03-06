@@ -16,6 +16,11 @@ html, body {
 a {
   text-decoration: none;
   color: #ffffff; }
+  a:hover, a:active, a:focus {
+    border: none;
+    color: #75b5f7;
+    outline: none;
+    text-decoration: none; }
 
 header ul {
   background-color: #0556a3;
