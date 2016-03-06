@@ -1,5 +1,7 @@
-name: "Meg Saxby"
+title: Meg Saxby
+description: Sex educator and facilitator
+url: "http://megsaxby.com"
 
-url: "megsaxby.com"
+markdown: kramdown
 
-permalink: pretty
+gems: [bourbon, neat]
