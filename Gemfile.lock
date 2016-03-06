@@ -41,7 +41,7 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon
-  jekyll
+  jekyll (= 3.1.2)
   neat
 
 BUNDLED WITH
