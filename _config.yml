@@ -2,6 +2,9 @@ title: Meg Saxby
 description: Sex educator and facilitator
 url: "http://megsaxby.com"
 
+collections:
+  - about_sections
+
 markdown: kramdown
 
 gems: [bourbon, neat]

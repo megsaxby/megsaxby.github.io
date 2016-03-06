@@ -1,17 +1,18 @@
 ---
 layout: page
 title: Who I am
-sub-title: Background
 ---
-
-<p>I have over a decade of experience in community development, social enterprise and cooperative/collective organizing. My work has focused on feminist sexual health, migrant support and justice, fair housing and community wellbeing. Like most people working in social justice movements, my choice to become involved was a gut-level, intuitive one. I believe in social inclusion and in justice, and the disregard for these principles in our society made me angry, so I became an activist.</p>
-
-<p>Over the years, that approach became more and more dysfunctional. I became one of the many burned-out, heartbroken and disassociated political activists - and, for all of my exhaustion and disillusionment, I hadn't even accomplished any of my alleged aims! In my desperation, I began to question the strategies, attitudes and norms of the nonprofit sector and political activism. Clearly there was a big disjuncture between the ways and the means being employed - I knew that toxic organisations, burn out and exhaustion weren't going to build the world we want. I felt, intuitively, that there were other ways, but I didn't know what they were or where to find them.</p>
-
-<p>What I was searching for - and what many of us search for - was different ways of organising, ways that affirmed wellness and resiliency, ways that were creative and healthy, ways that celebrated difference, shared resources and built joy in us even as we confronted the violent and painful parts of our world. I didn't want to have to choose between my own wellbeing and the wellbeing of my community, because I don't think those are separate things. I wanted ways of organizing that came out of indigenous and of colour feminism; out of crip theory and the disability justice movement; out of working-class and undocumented people's experiences. I wanted a movement that nourished and built up its participants, instead of draining them and burning them out. I wanted group collaboration that felt good in my body, in my relationships and in my community. I decided to devote my time and energy to learning about and building systems where these values can take root.</p>
-
-<p>This is what lead me to the work I now do - helping groups and organizations imagine and design practices, systems and cultures that promote wellness, cooperation, creativity and resiliency.</p>
-
-<p>Because I am not alone in wanting these things, I have had the great privilege of being community-educated and learning from a lot of rad people and organisations. You can see a list of them here.</p>
-
-<p>If you want to know about specific projects I've been a part of and ways in which I've been trained, you can see a detailed CV here.</p>
+{% for about_section in site.about_sections %}
+  <h2>{{ about_section.title }}</h2>
+  {% for paragraph in about_section.paragraphs %}
+    <p>{{ paragraph }}</p>
+  {% endfor %}
+  {% for influence in about_section.influences %}
+    <ul>
+      <h3>{{ influence.title }}</h3>
+      {% for idea in influence.ideas %}
+        <li>{{ idea }}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+{% endfor %}
