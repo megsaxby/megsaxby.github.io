@@ -11,14 +11,12 @@
     margin-bottom: 4em;
 
     p {
-      margin: 20px 0;
+      margin: 30px 0;
 
-      &:first-child {
+      &:first-of-type {
         margin-top: 0;
       }
     }
-
-    
   }
 
   img {
