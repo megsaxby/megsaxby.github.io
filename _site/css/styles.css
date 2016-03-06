@@ -50,7 +50,8 @@ header {
     margin-left: 8.5298%;
     float: left;
     font-size: 1.7em;
-    margin-top: 12px; }
+    font-weight: bold;
+    margin-top: 8px; }
 
 nav {
   float: right;
@@ -58,7 +59,9 @@ nav {
   nav > ul > li {
     display: inline;
     margin: 16px;
-    position: relative; }
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
     nav > ul > li:hover > .dropdown-menu {
       display: block; }
   nav .dropdown-menu {
@@ -69,7 +72,7 @@ nav {
     padding-left: 20px;
     position: absolute;
     top: 100%;
-    width: 120px;
+    width: 160px;
     z-index: 2; }
     nav .dropdown-menu li {
       margin: 20px 0; }
@@ -94,6 +97,8 @@ footer {
   background-color: #0556a3; }
   .contact:last-child {
     margin-right: 0; }
+  .contact h1 {
+    margin: 0; }
   .contact .container {
     float: left;
     display: block;
@@ -104,6 +109,8 @@ footer {
       margin-right: 0; }
   .contact .detail {
     margin-bottom: 15px; }
+    .contact .detail p {
+      line-height: normal; }
 
 .home {
   background: url("../images/birds-frontpage.png") no-repeat center center;
@@ -118,12 +125,13 @@ footer {
     color: #ffffff;
     padding-top: 15%; }
   .home h1 {
-    margin: .2em 0 .9em;
     color: #ffffff;
-    font-size: 3.5em; }
+    font-size: 5em;
+    margin: -20px 0 0; }
   .home a {
     border: 1px solid white;
-    padding: 10px; }
+    padding: 15px 30px;
+    text-transform: uppercase; }
 
 .page {
   background-color: #ffffff;
@@ -143,6 +151,9 @@ footer {
       display: table; }
     .page .content:last-child {
       margin-right: 0; }
+    .page .content h1 {
+      text-transform: uppercase;
+      font-weight: 100; }
     .page .content p {
       margin: 30px 0; }
       .page .content p:first-of-type {

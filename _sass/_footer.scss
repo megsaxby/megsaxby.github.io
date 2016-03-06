@@ -9,6 +9,10 @@ footer {
   @include shift(6);
   background-color: $dark-blue;
 
+  h1 {
+    margin: 0;
+  }
+
   .container {
     @include span-columns(6);
     padding: 20px;
@@ -16,5 +20,8 @@ footer {
 
   .detail {
     margin-bottom: 15px;
+    p {
+      line-height: normal;
+    }
   }
 }

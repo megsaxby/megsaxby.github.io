@@ -11,13 +11,14 @@
 	}
 
   h1 {
-    margin: .2em 0 .9em;
 		color: $white;
-		font-size: 3.5em;
+		font-size: 5em;
+		margin: -20px 0 0;
   }
 
 	a {
 		border: 1px solid white;
-		padding: 10px;
+		padding: 15px 30px;
+		text-transform: uppercase;
 	}
 }
