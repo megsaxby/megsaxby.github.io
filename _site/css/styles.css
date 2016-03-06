@@ -17,33 +17,6 @@ a {
   text-decoration: none;
   color: #ffffff; }
 
-h1 {
-  color: #ffffff;
-  font-size: 3.5em; }
-
-.container {
-  height: 100%;
-  top: 50px; }
-  .container.sub-page {
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    top: 0; }
-    .container.sub-page::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .container.sub-page img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: auto;
-      opacity: 0.2; }
-
-.content {
-  margin: 2em 5em; }
-
 header ul {
   background-color: #0556a3;
   list-style-type: none; }
@@ -114,7 +87,29 @@ footer {
     color: #ffffff;
     padding-top: 15%; }
   .home h1 {
-    margin: .2em 0 .9em; }
+    margin: .2em 0 .9em;
+    color: #ffffff;
+    font-size: 3.5em; }
   .home a {
     border: 1px solid white;
     padding: 10px; }
+
+.page {
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+  .page .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    .page .content:last-child {
+      margin-right: 0; }
+  .page img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.2; }

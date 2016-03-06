@@ -1,0 +1,19 @@
+.page {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .content {
+    @include span-columns(8);
+    @include shift(2);
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+  }
+}

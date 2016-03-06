@@ -19,34 +19,3 @@ a {
 	text-decoration: none;
 	color: $white;
 }
-
-h1 {
-	color: $white;
-	font-size: 3.5em;
-}
-
-.container {
-	height: 100%;
-	top: 50px;
-
-	&.sub-page {
-		@include clearfix;
-		height: 100%;
-		position: relative;
-		overflow: hidden;
-		top: 0;
-
-		img {
-			position: absolute;
-	    left: 0;
-	    top: 0;
-	    width: 100%;
-	    height: auto;
-	    opacity: 0.2;
-		}
-	}
-}
-
-.content {
-	margin: 2em 5em;
-}
