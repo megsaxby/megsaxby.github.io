@@ -17,7 +17,8 @@ html, body {
 
 a {
   text-decoration: none;
-  color: #ffffff; }
+  color: #ffffff;
+  cursor: pointer; }
   a:hover, a:active, a:focus {
     border: none;
     color: #75b5f7;
