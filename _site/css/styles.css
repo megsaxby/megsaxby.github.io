@@ -51,14 +51,14 @@ header {
     float: left;
     font-size: 1.7em;
     font-weight: bold;
-    margin-top: 8px; }
+    margin-top: 12px; }
 
 nav {
   float: right;
-  padding: 20px; }
+  padding: 25px; }
   nav > ul > li {
     display: inline;
-    margin: 16px;
+    margin: 20px;
     position: relative;
     text-transform: uppercase;
     letter-spacing: 1px; }
