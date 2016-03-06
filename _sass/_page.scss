@@ -10,13 +10,17 @@
     margin-top: 4em;
     margin-bottom: 4em;
 
+    .section {
+      margin-bottom: 40px;
+    }
+
     h1 {
       text-transform: uppercase;
       font-weight: 100;
     }
 
     p {
-      margin: 30px 0;
+      margin: 25px 0;
 
       &:first-of-type {
         margin-top: 0;

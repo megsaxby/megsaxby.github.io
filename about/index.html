@@ -3,16 +3,18 @@ layout: page
 title: Who I am
 ---
 {% for about_section in site.about_sections %}
-  <h2 id="{{about_section.title}}">{{ about_section.title }}</h2>
-  {% for paragraph in about_section.paragraphs %}
-    <p>{{ paragraph }}</p>
-  {% endfor %}
-  {% for influence in about_section.influences %}
-    <ul>
-      <h3>{{ influence.title }}</h3>
-      {% for idea in influence.ideas %}
-        <li>{{ idea }}</li>
-      {% endfor %}
-    </ul>
-  {% endfor %}
+  <div class="section">
+    <h2 id="{{about_section.title}}">{{ about_section.title }}</h2>
+    {% for paragraph in about_section.paragraphs %}
+      <p>{{ paragraph }}</p>
+    {% endfor %}
+    {% for influence in about_section.influences %}
+      <ul>
+        <h3>{{ influence.title }}</h3>
+        {% for idea in influence.ideas %}
+          <li>{{ idea }}</li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
 {% endfor %}
