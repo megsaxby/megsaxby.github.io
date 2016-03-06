@@ -1,0 +1,21 @@
+.home {
+	@include clearfix;
+	background: url('../images/birds-frontpage.png') no-repeat center center;
+	background-size: cover;
+	height: 100%;
+
+	.logo {
+    @include shift(2);
+    color: $white;
+    padding-top: 15%;
+	}
+
+  h1 {
+    margin: .2em 0 .9em;
+  }
+
+	a {
+		border: 1px solid white;
+		padding: 10px;
+	}
+}

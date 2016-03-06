@@ -1,56 +1,38 @@
-html, body {
-  height: 100%;
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+* {
   margin: 0;
   padding: 0;
-  font-family: "Lato", normal; }
+  border: 0; }
 
-ul, .container.sub-page, .main-content, .contact .contact-info-container, .contact .contact-info-container .details-container {
-  *zoom: 1; }
-  ul:before, .container.sub-page:before, .main-content:before, .contact .contact-info-container:before, .contact .contact-info-container .details-container:before, ul:after, .container.sub-page:after, .main-content:after, .contact .contact-info-container:after, .contact .contact-info-container .details-container:after {
-    content: " ";
-    display: table; }
-  ul:after, .container.sub-page:after, .main-content:after, .contact .contact-info-container:after, .contact .contact-info-container .details-container:after {
-    clear: both; }
+html, body {
+  height: 100%;
+  font-family: "Lato", normal, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-ul {
-  background-color: #0556a3;
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-  ul li {
-    padding: 1em; }
-    ul li:hover {
-      position: relative; }
-      ul li:hover .submenu {
-        display: block;
-        z-index: 2; }
-    ul li a {
-      text-decoration: none;
-      color: white; }
-  ul.navbar > li {
-    display: inline;
-    float: right; }
-  ul .submenu {
-    display: none;
-    left: 0;
-    position: absolute;
-    top: 3em;
-    width: 120px; }
-    ul .submenu > li:not(:last-child) {
-      padding-bottom: 0; }
+a {
+  text-decoration: none;
+  color: #ffffff; }
+
+h1 {
+  color: #ffffff;
+  font-size: 3.5em; }
 
 .container {
   height: 100%;
   top: 50px; }
-  .container.home {
-    display: flex;
-    flex-direction: column;
-    color: white; }
   .container.sub-page {
     height: 100%;
     position: relative;
     overflow: hidden;
     top: 0; }
+    .container.sub-page::after {
+      clear: both;
+      content: "";
+      display: table; }
     .container.sub-page img {
       position: absolute;
       left: 0;
@@ -59,30 +41,6 @@ ul {
       height: auto;
       opacity: 0.2; }
 
-.main-content {
-  background: url("../images/birds-frontpage.png") no-repeat center center;
-  background-size: cover;
-  height: 100%;
-  position: relative; }
-  .main-content .logo {
-    position: absolute;
-    top: 30%;
-    left: 20%; }
-    @media (max-width: 768px) {
-      .main-content .logo {
-        padding: 2em;
-        position: initial; } }
-    .main-content .logo h1 {
-      margin-top: 0;
-      font-size: 3.5em; }
-  .main-content .find-out-more-link a {
-    border: 1px solid white;
-    padding: 10px; }
-    @media (max-width: 768px) {
-      .main-content .find-out-more-link a {
-        background-color: #0556a3;
-        border: none; } }
-
 .contact {
   background-color: #75b5f7; }
   .contact .contact-info-container {
@@ -90,22 +48,28 @@ ul {
     background-color: #0556a3;
     padding: 2em 0 4em 2em;
     width: 50%; }
-    @media (max-width: 768px) {
+    .contact .contact-info-container::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media (max-width: max-width 768px 12) {
       .contact .contact-info-container {
         float: none;
         width: initial; } }
     .contact .contact-info-container .title-container {
       float: left; }
-      @media (max-width: 768px) {
+      @media (max-width: max-width 768px 12) {
         .contact .contact-info-container .title-container {
           float: none; } }
-      .contact .contact-info-container .title-container h1 {
-        margin-top: 0; }
     .contact .contact-info-container .details-container {
       float: left;
       font-size: 0.8em;
       margin: 1em 0 0 8em; }
-      @media (max-width: 768px) {
+      .contact .contact-info-container .details-container::after {
+        clear: both;
+        content: "";
+        display: table; }
+      @media (max-width: max-width 768px 12) {
         .contact .contact-info-container .details-container {
           float: none;
           margin: 0; } }
@@ -114,3 +78,47 @@ ul {
 
 .content {
   margin: 2em 5em; }
+
+header ul {
+  background-color: #0556a3;
+  list-style-type: none; }
+  header ul::after {
+    clear: both;
+    content: "";
+    display: table; }
+  header ul li {
+    padding: 1em; }
+    header ul li:hover {
+      position: relative; }
+      header ul li:hover .submenu {
+        display: block;
+        z-index: 2; }
+  header ul > li {
+    display: inline;
+    float: right; }
+header .submenu {
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 3em;
+  width: 120px; }
+  header .submenu > li:not(:last-child) {
+    padding-bottom: 0; }
+
+.home {
+  background: url("../images/birds-frontpage.png") no-repeat center center;
+  background-size: cover;
+  height: 100%; }
+  .home::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .home .logo {
+    margin-left: 17.05961%;
+    color: #ffffff;
+    padding-top: 15%; }
+  .home h1 {
+    margin: .2em 0 .9em; }
+  .home a {
+    border: 1px solid white;
+    padding: 10px; }
