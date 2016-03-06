@@ -41,41 +41,6 @@ h1 {
       height: auto;
       opacity: 0.2; }
 
-.contact {
-  background-color: #75b5f7; }
-  .contact .contact-info-container {
-    float: right;
-    background-color: #0556a3;
-    padding: 2em 0 4em 2em;
-    width: 50%; }
-    .contact .contact-info-container::after {
-      clear: both;
-      content: "";
-      display: table; }
-    @media (max-width: max-width 768px 12) {
-      .contact .contact-info-container {
-        float: none;
-        width: initial; } }
-    .contact .contact-info-container .title-container {
-      float: left; }
-      @media (max-width: max-width 768px 12) {
-        .contact .contact-info-container .title-container {
-          float: none; } }
-    .contact .contact-info-container .details-container {
-      float: left;
-      font-size: 0.8em;
-      margin: 1em 0 0 8em; }
-      .contact .contact-info-container .details-container::after {
-        clear: both;
-        content: "";
-        display: table; }
-      @media (max-width: max-width 768px 12) {
-        .contact .contact-info-container .details-container {
-          float: none;
-          margin: 0; } }
-      .contact .contact-info-container .details-container .contact-detail-name {
-        margin-bottom: 15px; }
-
 .content {
   margin: 2em 5em; }
 
@@ -104,6 +69,37 @@ header .submenu {
   width: 120px; }
   header .submenu > li:not(:last-child) {
     padding-bottom: 0; }
+
+footer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #75b5f7;
+  color: #ffffff; }
+  footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.contact {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 51.17883%;
+  background-color: #0556a3; }
+  .contact:last-child {
+    margin-right: 0; }
+  .contact .container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    padding: 20px; }
+    .contact .container:last-child {
+      margin-right: 0; }
+  .contact .detail {
+    margin-bottom: 15px; }
 
 .home {
   background: url("../images/birds-frontpage.png") no-repeat center center;

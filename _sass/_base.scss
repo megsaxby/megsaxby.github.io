@@ -47,47 +47,6 @@ h1 {
 	}
 }
 
-.contact {
-	background-color: $light-blue;
-
-	.contact-info-container {
-		@include clearfix;
-		float: right;
-		background-color: $dark-blue;
-		padding: 2em 0 4em 2em;
-		width: 50%;
-
-		@media (max-width: $mobile) {
-			float: none;
-			width: initial;
-		}
-
-		.title-container {
-			float: left;
-
-			@media (max-width: $mobile) {
-				float: none;
-			}
-		}
-
-		.details-container {
-			@include clearfix;
-			float: left;
-			font-size: 0.8em;
-			margin: 1em 0 0 8em;
-
-			@media (max-width: $mobile) {
-				float: none;
-				margin: 0;
-			}
-
-			.contact-detail-name {
-				margin-bottom: 15px;
-			}
-		}
-	}
-}
-
 .content {
 	margin: 2em 5em;
 }

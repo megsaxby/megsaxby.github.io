@@ -1,0 +1,20 @@
+footer {
+  @include outer-container();
+	background-color: $light-blue;
+  color: $white;
+}
+
+.contact {
+  @include span-columns(6);
+  @include shift(6);
+  background-color: $dark-blue;
+
+  .container {
+    @include span-columns(6);
+    padding: 20px;
+  }
+
+  .detail {
+    margin-bottom: 15px;
+  }
+}
