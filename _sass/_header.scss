@@ -8,6 +8,11 @@ header {
     font-size: 1.7em;
     font-weight: bold;
     margin-top: 12px;
+
+    @include media($mobile) {
+      float: none;
+      margin-left: 25px;
+    }
   }
 }
 
@@ -15,12 +20,21 @@ nav {
   float: right;
   padding: 25px;
 
+  @include media($mobile) {
+    float: none;
+  }
+
   & > ul > li {
     display: inline;
     margin: 20px;
     position: relative;
     text-transform: uppercase;
     letter-spacing: 1px;
+
+    @include media($mobile) {
+      letter-spacing: normal;
+      margin: 6px 12px 6px 0;
+    }
 
     &:hover > .dropdown-menu {
       display: block;
