@@ -9,6 +9,11 @@ footer {
   @include shift(6);
   background-color: $dark-blue;
 
+  @include media($mobile) {
+    @include shift(0);
+    @include span-columns(12);
+  }
+
   h1 {
     margin: 0;
   }
@@ -16,6 +21,14 @@ footer {
   .container {
     @include span-columns(6);
     padding: 20px;
+
+    @include media($mobile) {
+      @include span-columns(12);
+
+      &.helper-text {
+        display: none;
+      }
+    }
   }
 
   .detail {
