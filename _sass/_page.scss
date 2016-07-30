@@ -7,8 +7,16 @@
     @include clearfix;
     @include span-columns(6);
     @include shift(3);
-    margin-top: 4em;
-    margin-bottom: 4em;
+
+    margin: 4em 0;
+
+    @include media($mobile) {
+      @include shift(0);
+      @include span-columns(12);
+
+      margin: 1em 0;
+      padding: 0 25px;
+    }
 
     .section {
       margin-bottom: 40px;
