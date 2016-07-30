@@ -4,16 +4,29 @@
 	background-size: cover;
 	height: 100%;
 
+	@include media($mobile) {
+		height: 50%;
+	}
+
 	.logo {
     @include shift(2);
     color: $white;
     padding-top: 15%;
+
+		@include media($mobile) {
+			@include shift(0);
+			margin-left: 25px;
+		}
 	}
 
   h1 {
 		color: $white;
 		font-size: 5em;
 		margin: -20px 0 0;
+
+		@include media($mobile) {
+			font-size: 3em;
+		}
   }
 
 	a {
